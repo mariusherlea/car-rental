@@ -11,10 +11,10 @@ function NavBar() {
       </Link>
 
       <div className="hidden md:flex gap-5">
-        <h2 className="hover:bg-blue-500 p-2 rounded-full hover:text0=-white px-3 cursor-pointer">
+        <h2 className="hover:bg-blue-500 p-2 rounded-full hover:text0=-white px-3 cursor-pointer bg-green-500">
           History
         </h2>
-        <h2 className="hover:bg-blue-500 p-2 rounded-full hover:text0=-white px-3 cursor-pointer">
+        <h2 className="hover:bg-blue-500 p-2 rounded-full hover:text0=-white px-3 cursor-pointer bg-green-500">
           Contact us
         </h2>
       </div>
