@@ -25,12 +25,26 @@ export default function Home() {
     });
     setCarsList(filterList);
   };
+
+  const orderCarList = (order: string) => {
+    const sortedData = [...carsList].sort((a, b) => {
+      if (order === "Min to Max") {
+        return a.price - b.price;
+      } else if (order === "Max to Min") {
+        return b.price - a.price;
+      }
+      return 0;
+    });
+    setCarsList(sortedData);
+  };
+
   return (
     <div className="p-5 sm:px-10 md:px-20">
       <Hero />
       <SearchInput />
       <CarsFiltersOptions
         carsList={carsOrgList}
+        orderCarList={(value: string) => orderCarList(value)}
         setBrand={(value: string) => filterCarList(value)}
       />
 
