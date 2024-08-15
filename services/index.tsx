@@ -14,6 +14,10 @@ export const getCarsList = async () => {
         createdBy {
           name
         }
+        image {
+          url
+        }
+        seats
       }
     }
   `;
