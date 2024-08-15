@@ -64,7 +64,7 @@ function CarCard({ car }: CarCardProps) {
           <h2 className="line-clamp-5 text-[14px] font-light">{car.carType}</h2>
         </div>
       </div>
-      <button className="bg-green-400 text-white px-4 py-2 rounded-lg mt-2">
+      <button className="hidden group-hover:block bg-green-400 text-white px-4 py-2 rounded-lg mt-4">
         Rent now
       </button>
     </div>
